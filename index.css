@@ -1,0 +1,51 @@
+/* Fonte externa (coloque isso no HTML, não no CSS) */
+/* <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet"> */
+
+body {
+	font-family: 'Poppins', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 20px 0;
+	display: flex;
+	justify-content: center;
+	gap: 30px;
+	background-color: #003366;
+	padding: 15px 0;
+}
+
+ul li a {
+	text-decoration: none;
+	color: white;
+	font-size: 18px;
+	position: relative;
+	transition: color 0.3s;
+}
+
+ul li a::after {
+	content: '';
+	position: absolute;
+	width: 0%;
+	height: 2px;
+	bottom: -4px;
+	left: 0;
+	background-color: orange;
+	transition: 0.3s;
+}
+
+ul li a:hover {
+	color: #FFA500;
+}
+
+ul li a:hover::after {
+	width: 100%;
+}
+
+h1, hr {
+	margin: 0;
+	padding: 0;
+}
