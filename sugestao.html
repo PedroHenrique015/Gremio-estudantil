@@ -1,16 +1,51 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<title>Sugestões</title>
-	</head>
-	<body>
-		<h1>Grêmio Os Jovens Têm Voz</h1>
-		<hr>
-		<ul type="circle">
-			<li><a href="index.html"> Home</a></li>
-			<li><a href="sobre.html">Quem somos</a></li>
-			<li><a href="sugestao.html">Sugestões</a></li>
-		</ul>
-	</body>
+<head>
+    <title>Blog do Grêmio - [NOME DA PÁGINA]</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <img src="imagens/Banner.png" alt="Banner do Blog" class="banner">
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobre.html">Quem somos</a></li>
+                <li><a href="sugestao.html">Sugestões</a></li>
+                <li><a href="radio.html">Rádio</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <!-- CONTEÚDO ÚNICO DE CADA PÁGINA (ALTERE AQUI) -->
+        <article class="pagina-padrao">
+            <h1>Título da Página</h1>
+            <div class="conteudo-flex">
+                <div class="texto">
+                    <p>Seu conteúdo textual aqui...</p>
+                </div>
+                <div class="imagem-lateral">
+                    <img src="imagens/[imagem-relacionada].jpg" alt="Descrição da imagem">
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <div class="info-rodape">
+            <span>Pesquisar</span>
+            <span>POR</span>
+            <span id="hora-atual">21:16</span>
+            <span>PIB</span>
+            <span id="data-atual">21/07/2025</span>
+        </div>
+    </footer>
+
+    <!-- Script para data/hora dinâmica (opcional) -->
+    <script src="scripts.js"></script>
+</body>
 </html>
