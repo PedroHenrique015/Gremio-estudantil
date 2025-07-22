@@ -1,4 +1,4 @@
-/* Reset e Estilos Globais */
+/* Reset e Estilos gerais do codigo */
 * {
     margin: 0;
     padding: 0;
@@ -64,7 +64,7 @@ header {
     width: 100%;
 }
 
-/* Conteúdo Principal */
+/* conteúdo principal */
 .container {
     max-width: 1200px;
     margin: 30px auto;
@@ -106,7 +106,7 @@ header {
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-/* Rodapé */
+/* Roda pé kkk */
 footer {
     background-color: #003366;
     color: white;
@@ -125,7 +125,8 @@ footer {
     font-size: 0.9rem;
 }
 
-/* Responsividade */
+
+
 @media (max-width: 768px) {
     .menu {
         flex-direction: column;
@@ -147,4 +148,26 @@ footer {
         flex-direction: column;
         gap: 5px;
     }
+}
+
+.info-rodape {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    background-color: #003366;
+    color: white;
+    padding: 15px;
+    font-size: 0.9rem;
+}
+
+.info-rodape span {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+#hora-atual, #data-atual {
+    font-weight: bold;
+    color: #FFA500; 
 }
