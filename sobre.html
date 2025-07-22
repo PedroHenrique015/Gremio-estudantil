@@ -1,11 +1,135 @@
 <!doctype html>
 <html>
 <head>
-    <title>Blog do Grêmio - [NOME DA PÁGINA]</title>
+    <title>Blog do Grêmio - Sobre</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
+
+    <style>
+        /* Estilo do Vídeo */
+        .video-container {
+            width: 90%;
+            max-width: 800px;
+            margin: 40px auto;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 2px solid #e0e6ff;
+            background: #f5f7ff;
+            padding: 15px;
+        }
+
+        .video-container:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .video-container video {
+            width: 100%;
+            height: auto;
+            display: block;
+            max-height: 450px;
+            border-radius: 8px;
+        }
+
+        .video-container h3 {
+            text-align: center;
+            margin: 10px 0 20px;
+            color: #2541b2;
+            font-size: 1.4em;
+            font-weight: 600;
+        }
+
+        /* Estilo do Conteúdo */
+        .conteudo-flex {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: space-between;
+        }
+
+        .texto {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .texto p {
+            margin-bottom: 15px;
+            font-size: 1.05em;
+        }
+
+        .texto ul {
+            padding-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        .texto li {
+            margin-bottom: 8px;
+            position: relative;
+            list-style-type: none;
+            padding-left: 25px;
+        }
+
+        .texto li:before {
+            content: "•";
+            color: #4a6bff;
+            font-size: 1.5em;
+            position: absolute;
+            left: 0;
+            top: -3px;
+        }
+
+        .imagem-lateral {
+            flex: 0 0 300px;
+            background: #f0f4ff;
+            border-radius: 10px;
+            min-height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: inset 0 0 10px rgba(0,0,0,0.05);
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .video-container {
+                width: 95%;
+                margin: 25px auto;
+                padding: 10px;
+            }
+            
+            video {
+                max-height: 300px;
+            }
+            
+            .pagina-padrao h1 {
+                font-size: 1.8em;
+            }
+            
+            .conteudo-flex {
+                flex-direction: column;
+            }
+            
+            .imagem-lateral {
+                flex: 1;
+                min-height: 150px;
+                order: -1;
+                margin-bottom: 20px;
+            }
+        }
+
+        /* Efeitos Globais */
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        * {
+            transition: all 0.3s ease;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -21,21 +145,48 @@
     </header>
 
     <main class="container">
-        <!-- CONTEÚDO ÚNICO DE CADA PÁGINA (ALTERE AQUI) -->
         <article class="pagina-padrao">
-            <h1>Título da Página</h1>
+            <h1>Sobre o Grêmio Estudantil 2025-2026</h1>
             <div class="conteudo-flex">
                 <div class="texto">
-                    <p>Seu conteúdo textual aqui...</p>
+                    <p>O Grêmio Estudantil 2025-2026 é formado exclusivamente por alunos engajados em representar a comunidade estudantil e promover melhorias na escola.</p>
+
+                    <p>Atualmente, nossa equipe é composta por 10 cargos principais:</p>
+                    <ul>
+                        <li>Presidente</li>
+                        <li>Vice-Presidente</li>
+                        <li>Tesoureiro</li>
+                        <li>Secretário Geral</li>
+                        <li>1ª Secretária</li>
+                        <li>Diretora de Mídias</li>
+                        <li>Diretora de Meio Ambiente e Saúde</li>
+                        <li>Diretora de Cultura</li>
+                        <li>Diretor de Esportes</li>
+                        <li>Diretor Social</li>
+                    </ul>
+
+                    <p>Nosso principal objetivo é criar eventos que envolvam todos os alunos, proporcionando momentos de lazer e integração. Além disso, buscamos constantemente arrecadar fundos para investir em melhorias na escola.</p>
+
+                    <p>Acreditamos que a participação ativa dos estudantes transforma o ambiente escolar em um lugar mais justo, acolhedor e cheio de oportunidades para todos.</p>
                 </div>
+
                 <div class="imagem-lateral">
-                    <img src="imagens/[imagem-relacionada].jpg" alt="Descrição da imagem">
+                    <img src="imagens/logo.jpg" style="width: 300px;">
                 </div>
+            </div>
+
+            <div class="video-container">
+                <h3>Conheça o Grêmio em Ação!</h3>
+                <video controls poster="imagens/thumb-video.jpg">
+                    <source src="imagens/gremio.mp4" type="video/mp4">
+                    Seu navegador não suporta a tag de vídeo.
+                </video>
+                <a href="sugestao.html" class="cta-button">Quero Participar!</a>
             </div>
         </article>
     </main>
 
-      <footer>
+    <footer>
         <div class="info-rodape">
             <span>Direitos Reservados © 2025</span>
             <span>Horário oficial: <span id="hora-atual">--:--:--</span></span>
@@ -43,7 +194,51 @@
         </div>
     </footer>
 
-    <!-- Script para data/hora dinâmica (opcional) -->
     <script src="Index.js"></script>
+    
+    <style>
+        /* Estilos Adicionais para o Footer e CTA */
+        .cta-button {
+            display: block;
+            background: linear-gradient(135deg, #4a6bff, #2541b2);
+            color: white;
+            text-align: center;
+            padding: 10px 20px;
+            margin: 20px auto 0;
+            width: fit-content;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+            box-shadow: 0 4px 10px rgba(74, 107, 255, 0.3);
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(74, 107, 255, 0.4);
+            background: linear-gradient(135deg, #2541b2, #4a6bff);
+        }
+        
+        footer {
+            background: #2541b2;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin-top: 40px;
+        }
+        
+        .info-rodape {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 15px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .info-rodape span {
+            font-size: 0.9em;
+        }
+    </style>
 </body>
 </html>

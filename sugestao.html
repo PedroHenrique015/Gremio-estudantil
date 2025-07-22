@@ -7,9 +7,37 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
     <style>
+        /* ===== IMAGEM DE FUNDO FIXA ===== */
+        body {
+            background-image: url('imagens/fundo.jpg'); /* coloque sua imagem aqui */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+
         h1 {
             text-align: center;
             color: #0267cc;
+            background: white;
+            padding: 15px 40px;
+            border-radius: 10px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2),
+                        0 0 0 2px #258fd6,
+                        0 0 0 4px #9b59b6;
+            display: inline-block;
+            margin: 20px auto;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 2rem;
+        }
+
+        .pagina-padrao {
+            text-align: center;
         }
 
         hr {
@@ -18,15 +46,17 @@
             border: none;
             border-radius: 3px;
             margin: 20px 0;
+            box-shadow: 3px 2px black;
         }
 
         .formulario-iframe {
             max-width: 800px;
             margin: 30px auto;
+             max-width: 750px; /* largura ideal do forms do Google */
             padding: 20px;
             border-radius: 12px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
-            background-color: white;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            background-color: rgba(255, 255, 255, 0.95); /* branco translúcido para melhor leitura */
         }
 
         .formulario-iframe iframe {
@@ -34,6 +64,10 @@
             height: 745px;
             border: none;
         }
+
+
+
+
     </style>
 </head>
 <body>
@@ -51,10 +85,10 @@
 
     <main class="container">
         <article class="pagina-padrao">
-            <h1>Envie sua sugestão</h1>
+            <h1>DEIXE SUA SUGESTÃO</h1>  
             <hr>
             <div class="formulario-iframe">
-                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdnSFgXaHPKvozvmI1q3pbnmlH_gz5mM0iL1zMO5leJSvegxg/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdnSFgXaHPKvozvmI1q3pbnmlH_gz5mM0iL1zMO5leJSvegxg/viewform?embedded=true" marginheight="0" marginwidth="0">Carregando…</iframe>
             </div>
         </article>
     </main>
@@ -68,5 +102,6 @@
     </footer>
 
     <script src="Index.js"></script>
+    
 </body>
 </html>
