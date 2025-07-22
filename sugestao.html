@@ -1,11 +1,40 @@
 <!doctype html>
 <html>
 <head>
-    <title>Blog do Grêmio - [NOME DA PÁGINA]</title>
+    <title>Blog do Grêmio - Sugestões</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
+    <style>
+        h1 {
+            text-align: center;
+            color: #0267cc;
+        }
+
+        hr {
+            height: 5px;
+            background: linear-gradient(to right, #3498db, #9b59b6);
+            border: none;
+            border-radius: 3px;
+            margin: 20px 0;
+        }
+
+        .formulario-iframe {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
+            background-color: white;
+        }
+
+        .formulario-iframe iframe {
+            width: 100%;
+            height: 745px;
+            border: none;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -21,16 +50,11 @@
     </header>
 
     <main class="container">
-        <!-- CONTEÚDO ÚNICO DE CADA PÁGINA (ALTERE AQUI) -->
         <article class="pagina-padrao">
-            <h1>Título da Página</h1>
-            <div class="conteudo-flex">
-                <div class="texto">
-                    <p>Seu conteúdo textual aqui...</p>
-                </div>
-                <div class="imagem-lateral">
-                    <img src="imagens/[imagem-relacionada].jpg" alt="Descrição da imagem">
-                </div>
+            <h1>Envie sua sugestão</h1>
+            <hr>
+            <div class="formulario-iframe">
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdnSFgXaHPKvozvmI1q3pbnmlH_gz5mM0iL1zMO5leJSvegxg/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
             </div>
         </article>
     </main>
@@ -43,7 +67,6 @@
         </div>
     </footer>
 
-    <!-- Script para data/hora dinâmica (opcional) -->
     <script src="Index.js"></script>
 </body>
 </html>

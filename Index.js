@@ -17,4 +17,4 @@ setInterval(atualizarDataHora, 1000);
 atualizarDataHora();
 
 //*codigo fdp só pra um relogio e data, namoral*//
-//*pensando bem, é melhor que java *//
+//*pensando bem, é melhor que java*//
